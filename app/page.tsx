@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 dark:from-gray-900 dark:to-gray-800 p-6">
 
       {/* Alert / Hero Section */}
       <div className="flex flex-col items-center text-center gap-6 max-w-xl p-8 bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-300 dark:border-yellow-700 rounded-2xl shadow-lg animate-pulse">
@@ -37,7 +37,23 @@ export default function Home() {
         </Link>
       </nav>
 
-      
+      <style jsx>{`
+        .social-link {
+          display: inline-block;
+          padding: 0.6rem 1.2rem;
+          border-radius: 9999px;
+          background-color: #facc15; /* yellow-400 */
+          color: #1f2937; /* gray-800 */
+          font-weight: 600;
+          transition: all 0.3s ease;
+        }
+        .social-link:hover {
+          background-color: #eab308; /* yellow-500 */
+          color: white;
+          transform: translateY(-2px);
+        }
+      `}</style>
+
     </div>
   );
 }
