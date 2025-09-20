@@ -28,4 +28,17 @@ body {
   .nav-icon {
     @apply text-gray-600 dark:text-gray-300 transition-transform duration-200 hover:scale-125 hover:text-blue-500;
   }
+.social-link {
+          display: inline-block;
+          padding: 0.6rem 1.2rem;
+          border-radius: 9999px;
+          background-color: #facc15; /* yellow-400 */
+          color: #1f2937; /* gray-800 */
+          font-weight: 600;
+          transition: all 0.3s ease;
+        }
+        .social-link:hover {
+          background-color: #eab308; /* yellow-500 */
+          color: white;
+          transform: translateY(-2px);
 }
